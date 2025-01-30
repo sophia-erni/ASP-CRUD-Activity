@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ASP_CRUD_Activity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ed9b19de112664f042adb2790e14d2709a04f87")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9312a4f5204cf0c1932bbe5fad42b58a19ba4a39")]
 [assembly: System.Reflection.AssemblyProductAttribute("ASP_CRUD_Activity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ASP_CRUD_Activity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -61,6 +61,7 @@ namespace ASP_CRUD_Activity.Controllers
             var carDto = _mapper.Map<GetCarDto>(updatedCar);
             return Ok(carDto);
         }
+
         [HttpDelete("car/{id}")]
         public async Task<IActionResult> DeleteCar(Guid id)
         {
@@ -70,6 +71,20 @@ namespace ASP_CRUD_Activity.Controllers
             var carDto = _mapper.Map<GetCarDto>(car);
             return Ok(carDto);
         }
-        
+
+        //[HttpPatch("cars/{id}")]
+        //public async Task<IActionResult> PatchCar(Guid id, [FromBody] string PlateNo)
+        //{
+        //    var car = await _carRepository.Get(id);
+        //    if (car == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    _mapper.Map(PlateNo, car);
+        //    var updatedCar = await _carRepository.Update(car);
+        //    var carDto = _mapper.Map<GetCarDto>(updatedCar);
+        //    return Ok(carDto);
+        //}
+
     }
 }

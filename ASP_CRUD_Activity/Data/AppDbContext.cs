@@ -7,6 +7,8 @@ namespace ASP_CRUD_Activity.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
+        public DbSet<Customer> Customer { get; set; }
         public DbSet<Car> Car { get; set; }
+  
     }
 }

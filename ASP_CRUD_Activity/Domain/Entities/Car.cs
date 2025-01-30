@@ -7,8 +7,9 @@
         public long EngineNumber { get; set; }
         public int PlateNo { get; set; }
         public int Year { get; set; }
-
-
+        
+        public Guid CustomerId { get; set; }
+        public Customer Customer { get; set; }
 
 
     }

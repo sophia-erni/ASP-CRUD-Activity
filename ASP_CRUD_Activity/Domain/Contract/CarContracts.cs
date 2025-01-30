@@ -6,6 +6,7 @@
         public long EngineNumber { get; set; }
         public int PlateNo { get; set; }
         public int Year { get; set; }
+        public Guid CustomerId { get; set; }
     }
 
     public record UpdateCar
@@ -14,6 +15,8 @@
         public long EngineNumber { get; set; }
         public int PlateNo { get; set; }
         public int Year { get; set; }
+        public Guid CustomerId { get; set; }
+
     }
 
     public record DeleteCar
@@ -35,6 +38,7 @@
         public long EngineNumber { get; set; }
         public int PlateNo { get; set; }
         public int Year { get; set; }
+        public Guid CustomerId {  get; set; }
     }
    
     

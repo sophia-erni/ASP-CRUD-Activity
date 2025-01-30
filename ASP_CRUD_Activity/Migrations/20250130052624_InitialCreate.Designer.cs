@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASP_CRUD_Activity.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250129075600_InitialCreate")]
+    [Migration("20250130052624_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -31,6 +31,9 @@ namespace ASP_CRUD_Activity.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<Guid>("CustomerId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<long>("EngineNumber")
                         .HasColumnType("bigint");
 
@@ -46,7 +49,40 @@ namespace ASP_CRUD_Activity.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CustomerId");
+
                     b.ToTable("Car");
+                });
+
+            modelBuilder.Entity("ASP_CRUD_Activity.Domain.Entities.Customer", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Customer");
+                });
+
+            modelBuilder.Entity("ASP_CRUD_Activity.Domain.Entities.Car", b =>
+                {
+                    b.HasOne("ASP_CRUD_Activity.Domain.Entities.Customer", "Customer")
+                        .WithMany("Cars")
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("ASP_CRUD_Activity.Domain.Entities.Customer", b =>
+                {
+                    b.Navigation("Cars");
                 });
 #pragma warning restore 612, 618
         }

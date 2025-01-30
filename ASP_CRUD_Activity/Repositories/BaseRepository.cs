@@ -1,7 +1,6 @@
 ﻿using System.Linq.Expressions;
 using ASP_CRUD_Activity.Data;
 using Microsoft.EntityFrameworkCore;
-
 namespace ASP_CRUD_Activity.Repositories
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : class
@@ -54,7 +53,6 @@ namespace ASP_CRUD_Activity.Repositories
             query = includes.Aggregate(query, (current, include) => current.Include(include));
 
             return query.ToListAsync();
-            //include/ fetch something related to the book and define in the interface
         }
 
        

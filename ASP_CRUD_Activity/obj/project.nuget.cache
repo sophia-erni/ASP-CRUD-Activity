@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l31DBzjJRWY=",
+  "dgSpecHash": "cYI7gbHIVvo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\extjaso\\OneDrive - ERNI Group\\Desktop\\Bootcamp\\Exercises\\ASP-CRUD-Activity\\ASP_CRUD_Activity\\ASP_CRUD_Activity.csproj",
+  "projectFilePath": "C:\\Users\\extjaso\\source\\repos\\ASP-CRUD-Activity\\ASP_CRUD_Activity\\ASP_CRUD_Activity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\extjaso\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\extjaso\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
