@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "ASP_CRUD_Activity.Controllers.CarController",
+    "Method": "DeleteCar",
+    "RelativePath": "api/car/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ASP_CRUD_Activity.Controllers.CarController",
+    "Method": "GetCars",
+    "RelativePath": "api/cars",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ASP_CRUD_Activity.Controllers.CarController",
+    "Method": "CreateCar",
+    "RelativePath": "api/cars",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createCar",
+        "Type": "ASP_CRUD_Activity.Domain.Contract.CreateCar",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ASP_CRUD_Activity.Controllers.CarController",
+    "Method": "GetCar",
+    "RelativePath": "api/cars/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ASP_CRUD_Activity.Controllers.CarController",
+    "Method": "UpdateCar",
+    "RelativePath": "api/cars/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateCar",
+        "Type": "ASP_CRUD_Activity.Domain.Contract.UpdateCar",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
